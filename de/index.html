@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!--
+  THROW A PLATE AT THE WALL!!! – STARTSEITE (Deutsch). Die englische Seite ist ../index.html; beide gleich halten.
+  Nach EDIT suchen, um änderbaren Text zu finden. Nur die Wörter zwischen > und < ändern.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Throw a Plate at the Wall!!! – Über 200 Dinge zerschmettern auf dem iPhone</title>
+<meta name="description" content="Harter Tag? Wirf einen Teller an die Wand. Dann eine Vase. Dann einen Fernseher. Ein Physik-Zerschmetter-Spiel fürs iPhone – probier es gleich hier im Browser aus.">
+<meta name="theme-color" content="#1E44B8">
+<link rel="canonical" href="https://mathcatsmathcats.github.io/ThrowAPlate/de/">
+<link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/ThrowAPlate/">
+<link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/ThrowAPlate/de/">
+<link rel="alternate" hreflang="x-default" href="https://mathcatsmathcats.github.io/ThrowAPlate/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Throw a Plate at the Wall!!!">
+<meta property="og:title" content="Throw a Plate at the Wall!!!">
+<meta property="og:description" content="Harter Tag? Wirf einen Teller an die Wand. Dann eine Vase. Dann einen Fernseher. Über 200 Dinge zerschmettern auf dem iPhone.">
+<meta property="og:url" content="https://mathcatsmathcats.github.io/ThrowAPlate/de/">
+<meta property="og:image" content="https://mathcatsmathcats.github.io/ThrowAPlate/assets/img/og-de.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<!-- LINK EDIT: wenn die App live ist, ihre App-Store-ID für Safaris Banner eintragen: <meta name="apple-itunes-app" content="app-id=0000000000"> -->
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Throw a Plate at the Wall!!! – Startseite"><img src="../assets/img/icon-256.webp" width="40" height="40" alt=""><span>Throw a Plate</span></a>
+    <nav aria-label="Hauptmenü">
+      <a href="#how">So geht's</a>
+      <a href="#rooms" class="wide">Räume</a>
+      <a href="support/">Hilfe</a>
+      <a href="../" class="lang" lang="en" hreflang="en" title="English">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <svg class="cracks" aria-hidden="true"></svg>
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="logo" lang="en" aria-label="Throw a Plate at the Wall!!!"><span class="l1" aria-hidden="true">THROW A PLATE</span><span class="l2" aria-hidden="true">AT THE WALL!!!</span></h1>
+      <!-- EDIT 1 – die Zeile unter dem Titel -->
+      <p class="lede">Harter Tag? Wirf einen Teller an die Wand. Dann eine Vase. Dann einen Fernseher. Dann ein Klavier.</p>
+      <!-- EDIT 2 – wenn die App live ist, diese Zeile ersetzen durch:
+           <a class="chunky orange soon" href="https://apps.apple.com/de/app/idXXXXXXXXXX">Laden im App Store</a> -->
+      <p><span class="chunky orange soon">Bald im App Store</span></p>
+      <ul class="facts">
+        <li>Kostenlos mit Werbung</li><li>iPhone · iOS 18+</li><li>Deutsch · English</li>
+      </ul>
+      <p class="try">Probier's gleich hier aus →<small>Wisch den Teller an die Wand. Ton an.</small></p>
+    </div>
+
+    <div class="play">
+      <div class="phone">
+        <div class="screen">
+          <div class="game" id="game"></div>
+          <div class="status" aria-hidden="true"><b>9:41</b><i class="island"></i><span class="bars"><i></i><i></i><i></i><i></i></span></div>
+          <div class="hud">
+            <div class="pill"><small>Schadensrechnung</small><b id="bill">0 $</b></div>
+            <div class="pill"><small>Würfe</small><b id="count">0</b></div>
+            <button class="round" id="mute" type="button" aria-pressed="false" aria-label="Ton an"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="cross" d="M16 9l6 6M22 9l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+          </div>
+          <div class="hint" id="hint" aria-hidden="true"><span>Ab an die Wand damit!</span><i></i></div>
+          <div class="tray" role="toolbar" aria-label="Wähle, was du wirfst" id="tray"></div>
+        </div>
+      </div>
+      <aside class="receipt" aria-label="Schadensrechnung">
+        <p class="r-head">RECHNUNG</p>
+        <p class="r-sub">Küche · Tisch 1 · Kasse: du</p>
+        <ol class="r-lines" id="lines"><li class="r-empty">Noch nichts kaputt. Noch.</li></ol>
+        <p class="r-total"><span>GESAMT</span><b id="total">0,00 $</b></p>
+        <p class="r-bars" aria-hidden="true"></p>
+        <p class="r-foot">Keine echten Teller wurden verletzt.<br>Vielen Dank für Ihren Besuch.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band how" id="how">
+  <div class="wrap">
+    <!-- EDIT 3 – so geht's -->
+    <h2 class="shout">Ziehen. Wischen. <em>Zerschmettern.</em></h2>
+    <ol class="cards">
+      <li class="card yellow">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><rect x="10" y="52" width="60" height="18" rx="6" fill="#0A1A4F" opacity=".18"/><circle cx="40" cy="30" r="17" fill="#fff" stroke="#0A1A4F" stroke-width="4"/><circle cx="40" cy="30" r="11" fill="none" stroke="#2F6BEA" stroke-width="3"/><path d="M40 70V52m-8 8 8-8 8 8" stroke="#0A1A4F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Rausziehen</h3>
+        <p>Zieh einen Teller, eine Tasse oder gleich einen Fernseher aus der Leiste.</p>
+      </li>
+      <li class="card cyan">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><path d="M14 66C30 52 42 34 58 14" stroke="#0A1A4F" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="1 11"/><path d="M46 12h14v14" stroke="#0A1A4F" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="58" cy="50" r="14" fill="#E23B3B" stroke="#fff" stroke-width="5"/><circle cx="58" cy="50" r="5" fill="#FFD633"/></svg>
+        <h3>Fest wischen</h3>
+        <p>Je kräftiger du wischst, desto härter der Aufprall. Ein Volltreffer zählt ×1,5.</p>
+      </li>
+      <li class="card pink">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><g fill="#fff" stroke="#0A1A4F" stroke-width="3.5" stroke-linejoin="round"><path d="M38 34 24 22l20-6z"/><path d="M44 36l18-10-4 18z"/><path d="M36 42 18 46l10 14z"/><path d="M44 44l14 14-18 4z"/></g><g stroke="#0A1A4F" stroke-width="4" stroke-linecap="round"><path d="M40 10v6M66 40h6M14 36H8M60 16l-4 4"/></g></svg>
+        <h3>Zerspringen sehen</h3>
+        <p>Echte Physik-Scherben hüpfen, rutschen und klirren über den Boden.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band shots">
+  <div class="wrap">
+    <!-- EDIT 4 – die Objekte -->
+    <h2 class="shout">Über 200 Dinge zerschmettern</h2>
+    <p class="sub">Teller, Tassen, Weingläser, Vasen, Lampen, Fernseher, Torten, Gummibärchen … und ein paar sehr große Überraschungen.</p>
+    <ul class="breaks">
+      <li>Porzellan <b>splittert</b></li><li>Glas <b>zerplatzt</b></li><li>Metall <b>verbeult</b></li><li>Wackelpudding <b>klatscht</b></li>
+    </ul>
+  </div>
+  <ul class="rail" tabindex="0" aria-label="Bildschirmfotos">
+    <li><img src="../assets/img/shots/de/01_smash.webp" width="480" height="1043" loading="lazy" alt="Fest wischen: Ein Teller zerspringt an einer Küchenwand, oben die Schadensrechnung"></li>
+    <li><img src="../assets/img/shots/de/03_bullseye.webp" width="480" height="1043" loading="lazy" alt="Triff die Mitte: ein Volltreffer in der Mitte der Zielscheibe für ×1,5 Schaden"></li>
+    <li><img src="../assets/img/shots/de/04_walldown.webp" width="480" height="1043" loading="lazy" alt="Reiß die Wand ein: Die ganze Wand stürzt ein, dann geht es weiter in den nächsten Raum"></li>
+    <li><img src="../assets/img/shots/de/05_visitor.webp" width="480" height="1043" loading="lazy" alt="Vorsicht, Nachbarn: Ein gezeichneter Nachbar schaut herein und fragt, ob alles in Ordnung ist"></li>
+    <li><img src="../assets/img/shots/de/06_collection.webp" width="480" height="1043" loading="lazy" alt="Sammle alles: die Smashopädie mit Objekten zum Freischalten und Sternen"></li>
+    <li><img src="../assets/img/shots/de/07_editor.webp" width="480" height="1043" loading="lazy" alt="Dein Raum, deine Wand: Tapeten zur Auswahl oder dein eigenes Foto als Ziel"></li>
+  </ul>
+</section>
+
+<section class="band goals">
+  <div class="wrap">
+    <!-- EDIT 5 – Zielen und Fortschritt -->
+    <h2 class="shout">Zielen. Sammeln. <em>Wand einreißen.</em></h2>
+    <ul class="quad">
+      <li class="card yellow">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="24" fill="#1E44B8"/><circle cx="28" cy="28" r="17" fill="#fff"/><circle cx="28" cy="28" r="10" fill="#2F6BEA"/><circle cx="28" cy="28" r="5" fill="#E23B3B"/></svg>
+        <h3>Triff die Mitte</h3>
+        <p>Volltreffer ×1,5, die äußeren Ringe weniger. Daneben gibt's nichts.</p>
+      </li>
+      <li class="card cyan">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 5l6.8 14.2 15.5 2-11.4 10.7 2.9 15.4L28 39.8 14.2 47.3l2.9-15.4L5.7 21.2l15.5-2z" fill="#FFD633" stroke="#0A1A4F" stroke-width="3.5" stroke-linejoin="round"/></svg>
+        <h3>Sterne sammeln</h3>
+        <p>Sterne schalten neue Objekte zum Zerbrechen frei, immer drei auf einmal.</p>
+      </li>
+      <li class="card pink">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 50c-10 0-17-7-17-16 0-8 6-12 8-20 4 4 5 8 5 11 3-5 6-12 4-21 9 5 17 16 17 30 0 9-7 16-17 16z" fill="#FFD633" stroke="#0A1A4F" stroke-width="3.5" stroke-linejoin="round"/><path d="M28 50c-4 0-7-3-7-7 0-5 4-7 5-11 3 3 9 6 9 11 0 4-3 7-7 7z" fill="#FF8C26"/></svg>
+        <h3>Wutmodus</h3>
+        <p>Füll die Wutanzeige für Dauerfeuer mit doppeltem Schaden.</p>
+      </li>
+      <li class="card green">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><g fill="#fff" stroke="#0A1A4F" stroke-width="3" stroke-linejoin="round"><path d="M6 10h20v10H6zM30 10h20v10H30zM6 24h12v10H6zM22 24h16v10H22zM6 38h20v10H6z"/><path d="M42 30l8-2 2 8-8 2zM32 42l9 1-1 7-9-1z"/></g></svg>
+        <h3>Wand runter!</h3>
+        <p>Richte genug Schaden an und die ganze Wand stürzt ein. Dann geht's weiter in den nächsten Raum.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band rooms" id="rooms">
+  <div class="wrap">
+    <!-- EDIT 6 – die Räume -->
+    <h2 class="shout">10 Räume zum Verwüsten</h2>
+    <ul class="stickers">
+      <li class="s1"><b>Küche</b><span>Hier fängt alles an.</span></li>
+      <li class="s2"><b>Omas Wohnzimmer</b><span>Feines Porzellan ×1,5. Sie wird es nie erfahren.</span></li>
+      <li class="s3"><b>Griechische Taverne</b><span>Teller ×2. Opa!</span></li>
+      <li class="s4"><b>Polterabend</b><span>Scherben bringen Glück: ×2.</span></li>
+      <li class="s5"><b>Großraumbüro</b><span>Elektronik ×2. Montagslaune.</span></li>
+      <li class="s1"><b>Museum</b><span>Alles unbezahlbar: ×1,5.</span></li>
+      <li class="s3"><b>Wutraum</b><span>Glas ×2. Schutzbrille auf.</span></li>
+      <li class="s2"><b>Burgsaal</b><span>Deko ×2. Hallende Gemäuer.</span></li>
+      <li class="s5"><b>Neon-Spielhalle</b><span>Partykram ×2. Alles neon.</span></li>
+      <li class="s4"><b>Mondbasis</b><span>Wenig Schwerkraft. Scherben schweben.</span></li>
+    </ul>
+    <p class="yours"><b>Dein Raum.</b> Wähl Tapete, Boden, Licht und Möbel, oder nimm dein eigenes Foto als Wand. Du kannst sogar deine echte Wand fotografieren.</p>
+  </div>
+</section>
+
+<section class="band chaos">
+  <div class="wrap">
+    <!-- EDIT 7 – die Extras -->
+    <h2 class="shout">Noch mehr <em>Chaos</em></h2>
+    <ul class="tiles">
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 12V4h8M28 4h8v8M36 28v8h-8M12 36H4v-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="8" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>AR-Modus</h3><p>Zerschmettere Dinge an der echten Wand vor dir.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="13" y="6" width="14" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M6 14l-3 3 3 3 -3 3M34 14l3 3-3 3 3 3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Erdbeben</h3><p>Schüttel dein Handy, und alles auf dem Boden fliegt durcheinander.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M33 20a13 13 0 1 1-4-9.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M30 4v7h-7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 14v12l9-6z" fill="currentColor"/></svg>
+        <h3>Sofort-Wiederholungen</h3><p>Sieh dir einen Wurf gleich noch mal an und teile ihn.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 16h6l14-9v26l-14-9H6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M12 24l3 10h5l-2-8M31 13l4-3M32 20h5M31 27l4 3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Schrei-Boost</h3><p>Schrei beim Werfen, um härter zu werfen. Freiwillig, und nichts wird aufgenommen.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 8h30v19H17l-8 7v-7H5z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 12v7" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="20" cy="23" r="2" fill="currentColor"/></svg>
+        <h3>Wütende Nachbarn</h3><p>Ab und zu schaut jemand herein und beschwert sich. Die finden das gar nicht lustig.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="7" width="20" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="3" transform="rotate(-18 20 20)"/><path d="M27 36c4-1 7-4 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M36 33l-1-5-4 2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Neige-Schwerkraft</h3><p>Neig dein Handy, und die Scherben rutschen mit.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="4" width="22" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 18l-5-7M20 18l6-5M20 18l-3 9M20 18l5 6M20 18l-7 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Bildschirmriss-Streich</h3><p>Manchmal sieht es aus, als wäre dein Display kaputt. Ist es nicht.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 34h30M8 34V22h8v12M16 34V12h8v22M24 34V18h8v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 3l1.5 3 3.3.5-2.4 2.3.6 3.2-3-1.6-3 1.6.6-3.2-2.4-2.3 3.3-.5z" fill="currentColor"/></svg>
+        <h3>Bestenlisten</h3><p>Game Center: Gesamtschaden, bester Treffer und Schaden dieser Woche.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <p class="sign" aria-hidden="true"><span>KEINE ECHTEN TELLER</span><span>WURDEN VERLETZT.</span></p>
+    <!-- EDIT 8 – der Schlusssatz; wenn die App live ist, „App Store“ mit ihrer Seite verlinken -->
+    <p class="more">Bald im App Store fürs iPhone. Fragen oder Ideen? <a href="support/">Schreib uns</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Maksim Puzyrkov (MathCats)</p>
+    <nav aria-label="Fußzeile">
+      <a href="support/">Hilfe</a>
+      <a href="privacy/">Datenschutz</a>
+      <a href="https://mathcatsmathcats.github.io/ThrowAPlate-privacy/privacy-policy.html#de">Datenschutzerklärung der App</a>
+      <a href="../impressum/">Impressum</a>
+      <a href="../" lang="en" hreflang="en">English</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../assets/smash.js"></script>
+<script src="../assets/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  THROW A PLATE AT THE WALL!!! – HOME PAGE (English). The German page is de/index.html; keep the two in step.
+  Search for EDIT to find text you may change. Change only the words between > and <.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Throw a Plate at the Wall!!! – Smash 200+ things on iPhone</title>
+<meta name="description" content="Had a day? Throw a plate at the wall. Then a vase. Then a TV. A physics smashing game for iPhone – try it right here in your browser.">
+<meta name="theme-color" content="#1E44B8">
+<link rel="canonical" href="https://mathcatsmathcats.github.io/ThrowAPlate/">
+<link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/ThrowAPlate/">
+<link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/ThrowAPlate/de/">
+<link rel="alternate" hreflang="x-default" href="https://mathcatsmathcats.github.io/ThrowAPlate/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Throw a Plate at the Wall!!!">
+<meta property="og:title" content="Throw a Plate at the Wall!!!">
+<meta property="og:description" content="Had a day? Throw a plate at the wall. Then a vase. Then a TV. Smash 200+ things on iPhone.">
+<meta property="og:url" content="https://mathcatsmathcats.github.io/ThrowAPlate/">
+<meta property="og:image" content="https://mathcatsmathcats.github.io/ThrowAPlate/assets/img/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<!-- LINK EDIT: when the app is live, add its App Store ID for Safari's banner: <meta name="apple-itunes-app" content="app-id=0000000000"> -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Throw a Plate at the Wall!!! home"><img src="assets/img/icon-256.webp" width="40" height="40" alt=""><span>Throw a Plate</span></a>
+    <nav aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#rooms" class="wide">Rooms</a>
+      <a href="support/">Support</a>
+      <a href="de/" class="lang" lang="de" hreflang="de" title="Deutsch">DE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <svg class="cracks" aria-hidden="true"></svg>
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="logo" aria-label="Throw a Plate at the Wall!!!"><span class="l1" aria-hidden="true">THROW A PLATE</span><span class="l2" aria-hidden="true">AT THE WALL!!!</span></h1>
+      <!-- EDIT 1 – the line under the title -->
+      <p class="lede">Had a day? Throw a plate at the wall. Then a vase. Then a TV. Then a piano.</p>
+      <!-- EDIT 2 – when the app is live, replace this line with:
+           <a class="chunky orange soon" href="https://apps.apple.com/app/idXXXXXXXXXX">Download on the App Store</a> -->
+      <p><span class="chunky orange soon">Coming soon to the App Store</span></p>
+      <ul class="facts">
+        <li>Free with ads</li><li>iPhone · iOS 18+</li><li>English · Deutsch</li>
+      </ul>
+      <p class="try">Try it right here →<small>Flick the plate at the wall. Sound on.</small></p>
+    </div>
+
+    <div class="play">
+      <div class="phone">
+        <div class="screen">
+          <div class="game" id="game"></div>
+          <div class="status" aria-hidden="true"><b>9:41</b><i class="island"></i><span class="bars"><i></i><i></i><i></i><i></i></span></div>
+          <div class="hud">
+            <div class="pill"><small>Damage bill</small><b id="bill">$0</b></div>
+            <div class="pill"><small>Thrown</small><b id="count">0</b></div>
+            <button class="round" id="mute" type="button" aria-pressed="false" aria-label="Sound on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="cross" d="M16 9l6 6M22 9l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+          </div>
+          <div class="hint" id="hint" aria-hidden="true"><span>Flick it at the wall!</span><i></i></div>
+          <div class="tray" role="toolbar" aria-label="Pick something to throw" id="tray"></div>
+        </div>
+      </div>
+      <aside class="receipt" aria-label="Damage bill">
+        <p class="r-head">DAMAGE BILL</p>
+        <p class="r-sub">Kitchen · Table 1 · Cashier: you</p>
+        <ol class="r-lines" id="lines"><li class="r-empty">Nothing broken. Yet.</li></ol>
+        <p class="r-total"><span>TOTAL</span><b id="total">$0.00</b></p>
+        <p class="r-bars" aria-hidden="true"></p>
+        <p class="r-foot">No real plates were harmed.<br>Thank you, come again.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band how" id="how">
+  <div class="wrap">
+    <!-- EDIT 3 – how it works -->
+    <h2 class="shout">Pull. Flick. <em>Smash.</em></h2>
+    <ol class="cards">
+      <li class="card yellow">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><rect x="10" y="52" width="60" height="18" rx="6" fill="#0A1A4F" opacity=".18"/><circle cx="40" cy="30" r="17" fill="#fff" stroke="#0A1A4F" stroke-width="4"/><circle cx="40" cy="30" r="11" fill="none" stroke="#2F6BEA" stroke-width="3"/><path d="M40 70V52m-8 8 8-8 8 8" stroke="#0A1A4F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Pull one up</h3>
+        <p>Drag a plate, a mug or a whole TV up out of the tray.</p>
+      </li>
+      <li class="card cyan">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><path d="M14 66C30 52 42 34 58 14" stroke="#0A1A4F" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="1 11"/><path d="M46 12h14v14" stroke="#0A1A4F" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="58" cy="50" r="14" fill="#E23B3B" stroke="#fff" stroke-width="5"/><circle cx="58" cy="50" r="5" fill="#FFD633"/></svg>
+        <h3>Flick it hard</h3>
+        <p>The harder you flick, the harder it hits. The bullseye pays ×1.5.</p>
+      </li>
+      <li class="card pink">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><g fill="#fff" stroke="#0A1A4F" stroke-width="3.5" stroke-linejoin="round"><path d="M38 34 24 22l20-6z"/><path d="M44 36l18-10-4 18z"/><path d="M36 42 18 46l10 14z"/><path d="M44 44l14 14-18 4z"/></g><g stroke="#0A1A4F" stroke-width="4" stroke-linecap="round"><path d="M40 10v6M66 40h6M14 36H8M60 16l-4 4"/></g></svg>
+        <h3>Watch it burst</h3>
+        <p>Real physics pieces bounce, slide and clatter across the floor.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band shots">
+  <div class="wrap">
+    <!-- EDIT 4 – the objects -->
+    <h2 class="shout">Smash 200+ things</h2>
+    <p class="sub">Plates, mugs, wine glasses, vases, lamps, TVs, cakes, gummy bears… and some very big surprises.</p>
+    <ul class="breaks">
+      <li>Porcelain <b>shatters</b></li><li>Glass <b>bursts</b></li><li>Metal <b>dents</b></li><li>Jelly <b>splats</b></li>
+    </ul>
+  </div>
+  <ul class="rail" tabindex="0" aria-label="Screenshots">
+    <li><img src="assets/img/shots/en/01_smash.webp" width="480" height="1043" loading="lazy" alt="Flick hard: a plate bursts into pieces against a kitchen wall, with the damage bill at the top"></li>
+    <li><img src="assets/img/shots/en/03_bullseye.webp" width="480" height="1043" loading="lazy" alt="Hit the bullseye: a direct hit in the middle of the target for ×1.5 damage"></li>
+    <li><img src="assets/img/shots/en/04_walldown.webp" width="480" height="1043" loading="lazy" alt="Bring the wall down: the whole wall crumbles, then it's on to the next room"></li>
+    <li><img src="assets/img/shots/en/05_visitor.webp" width="480" height="1043" loading="lazy" alt="Mind the neighbours: a cartoon neighbour leans in and asks if everything is okay in there"></li>
+    <li><img src="assets/img/shots/en/06_collection.webp" width="480" height="1043" loading="lazy" alt="Collect them all: the Smashopedia with objects to unlock and stars to earn"></li>
+    <li><img src="assets/img/shots/en/07_editor.webp" width="480" height="1043" loading="lazy" alt="Your room, your wall: wallpapers to pick, or your own photo as the target"></li>
+  </ul>
+</section>
+
+<section class="band goals">
+  <div class="wrap">
+    <!-- EDIT 5 – aiming and progress -->
+    <h2 class="shout">Aim. Earn. <em>Bring it down.</em></h2>
+    <ul class="quad">
+      <li class="card yellow">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="24" fill="#1E44B8"/><circle cx="28" cy="28" r="17" fill="#fff"/><circle cx="28" cy="28" r="10" fill="#2F6BEA"/><circle cx="28" cy="28" r="5" fill="#E23B3B"/></svg>
+        <h3>Hit the bullseye</h3>
+        <p>Bullseye ×1.5, the outer rings less. Miss the target and you get nothing.</p>
+      </li>
+      <li class="card cyan">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 5l6.8 14.2 15.5 2-11.4 10.7 2.9 15.4L28 39.8 14.2 47.3l2.9-15.4L5.7 21.2l15.5-2z" fill="#FFD633" stroke="#0A1A4F" stroke-width="3.5" stroke-linejoin="round"/></svg>
+        <h3>Earn stars</h3>
+        <p>Stars unlock new objects to break, three at a time.</p>
+      </li>
+      <li class="card pink">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 50c-10 0-17-7-17-16 0-8 6-12 8-20 4 4 5 8 5 11 3-5 6-12 4-21 9 5 17 16 17 30 0 9-7 16-17 16z" fill="#FFD633" stroke="#0A1A4F" stroke-width="3.5" stroke-linejoin="round"/><path d="M28 50c-4 0-7-3-7-7 0-5 4-7 5-11 3 3 9 6 9 11 0 4-3 7-7 7z" fill="#FF8C26"/></svg>
+        <h3>Rage mode</h3>
+        <p>Fill the rage meter for rapid fire at double damage.</p>
+      </li>
+      <li class="card green">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><g fill="#fff" stroke="#0A1A4F" stroke-width="3" stroke-linejoin="round"><path d="M6 10h20v10H6zM30 10h20v10H30zM6 24h12v10H6zM22 24h16v10H22zM6 38h20v10H6z"/><path d="M42 30l8-2 2 8-8 2zM32 42l9 1-1 7-9-1z"/></g></svg>
+        <h3>Wall down!</h3>
+        <p>Do enough damage and the whole wall comes down. Then it's on to the next room.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band rooms" id="rooms">
+  <div class="wrap">
+    <!-- EDIT 6 – the rooms -->
+    <h2 class="shout">10 rooms to wreck</h2>
+    <ul class="stickers">
+      <li class="s1"><b>Kitchen</b><span>Where it all begins.</span></li>
+      <li class="s2"><b>Grandma's Living Room</b><span>Fine china ×1.5. She'll never know.</span></li>
+      <li class="s3"><b>Greek Taverna</b><span>Plates ×2. Opa!</span></li>
+      <li class="s4"><b>Polterabend</b><span>Porcelain brings luck: ×2.</span></li>
+      <li class="s5"><b>Open Office</b><span>Electronics ×2. Monday mood.</span></li>
+      <li class="s1"><b>Museum</b><span>Everything is priceless: ×1.5.</span></li>
+      <li class="s3"><b>Rage Room</b><span>Glass ×2. Wear goggles.</span></li>
+      <li class="s2"><b>Castle Hall</b><span>Decor ×2. Echoing halls.</span></li>
+      <li class="s5"><b>Neon Arcade</b><span>Party stuff ×2. Neon everything.</span></li>
+      <li class="s4"><b>Moon Base</b><span>Low gravity. Pieces float.</span></li>
+    </ul>
+    <p class="yours"><b>Make it your room.</b> Pick the wallpaper, floor, light and furniture, or use your own photo as the wall. You can even snap your real wall.</p>
+  </div>
+</section>
+
+<section class="band chaos">
+  <div class="wrap">
+    <!-- EDIT 7 – the extras -->
+    <h2 class="shout">Even more <em>chaos</em></h2>
+    <ul class="tiles">
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 12V4h8M28 4h8v8M36 28v8h-8M12 36H4v-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="8" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>AR Mode</h3><p>Smash things against the real wall in front of you.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="13" y="6" width="14" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M6 14l-3 3 3 3 -3 3M34 14l3 3-3 3 3 3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Earthquake</h3><p>Shake your phone and everything on the floor goes flying.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M33 20a13 13 0 1 1-4-9.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M30 4v7h-7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 14v12l9-6z" fill="currentColor"/></svg>
+        <h3>Instant replays</h3><p>See a smash again right away, and share it.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 16h6l14-9v26l-14-9H6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M12 24l3 10h5l-2-8M31 13l4-3M32 20h5M31 27l4 3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Yell Boost</h3><p>Shout while you throw to throw harder. Optional, and nothing is recorded.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 8h30v19H17l-8 7v-7H5z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 12v7" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="20" cy="23" r="2" fill="currentColor"/></svg>
+        <h3>Angry neighbours</h3><p>Now and then someone leans in to complain. They are not amused.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="7" width="20" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="3" transform="rotate(-18 20 20)"/><path d="M27 36c4-1 7-4 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M36 33l-1-5-4 2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Tilt gravity</h3><p>Tilt your phone and the pieces slide with it.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="4" width="22" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 18l-5-7M20 18l6-5M20 18l-3 9M20 18l5 6M20 18l-7 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Screen-crack prank</h3><p>Sometimes it looks like your screen broke. It didn't.</p></li>
+      <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 34h30M8 34V22h8v12M16 34V12h8v22M24 34V18h8v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 3l1.5 3 3.3.5-2.4 2.3.6 3.2-3-1.6-3 1.6.6-3.2-2.4-2.3 3.3-.5z" fill="currentColor"/></svg>
+        <h3>Leaderboards</h3><p>Game Center: all-time damage, best single smash and this week's damage.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <p class="sign" aria-hidden="true"><span>NO REAL PLATES</span><span>WERE HARMED.</span></p>
+    <!-- EDIT 8 – the closing line; when the app is live, link "App Store" to its page -->
+    <p class="more">Coming soon to the App Store for iPhone. Questions or ideas? <a href="support/">Get in touch</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Maksim Puzyrkov (MathCats)</p>
+    <nav aria-label="Footer">
+      <a href="support/">Support</a>
+      <a href="privacy/">Privacy</a>
+      <a href="https://mathcatsmathcats.github.io/ThrowAPlate-privacy/privacy-policy.html">App privacy policy</a>
+      <a href="impressum/" lang="de">Impressum</a>
+      <a href="de/" lang="de" hreflang="de">Deutsch</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/smash.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>
