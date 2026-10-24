@@ -3,7 +3,7 @@
 Website for **Throw a Plate at the Wall!!!**, the physics smashing game for iPhone (code name "ThrowAPlate",
 local app repo `~/Developer/ThrowAPlate`). Plain HTML and CSS, English and German. Nothing to install and nothing to build.
 
-Live at **https://mathcatsmathcats.github.io/ThrowAPlate/** (repo `MathCatsMathCats/ThrowAPlate`, GitHub Pages
+Live at **https://makohippo.com/ThrowAPlate/** (repo `MathCatsMathCats/ThrowAPlate`, GitHub Pages
 from `main`, root folder).
 
 | Page | English | German |
@@ -39,10 +39,10 @@ On both home pages (`index.html`, `de/index.html`):
 
 ## App Store Connect
 
-- **Support URL:** `https://mathcatsmathcats.github.io/ThrowAPlate/support/` (German: `…/de/support/`)
-- **Marketing URL:** `https://mathcatsmathcats.github.io/ThrowAPlate/`. AdMob looks for `app-ads.txt` at the root of
-  that domain, `https://mathcatsmathcats.github.io/app-ads.txt`, which lives in the `MathCatsMathCats.github.io` repo.
-- **Privacy Policy URL:** stays `https://mathcatsmathcats.github.io/ThrowAPlate-privacy/privacy-policy.html`, because
+- **Support URL:** `https://makohippo.com/ThrowAPlate/support/` (German: `…/de/support/`)
+- **Marketing URL:** `https://makohippo.com/ThrowAPlate/`. AdMob looks for `app-ads.txt` at the root of
+  that domain, `https://makohippo.com/app-ads.txt`, which lives in the `MathCatsMathCats.github.io` repo.
+- **Privacy Policy URL:** stays `https://mathcatsmathcats.github.io/ThrowAPlate-privacy/privacy-policy.html` (it redirects to makohippo.com), because
   that address is built into the app (Settings → Privacy policy). Its source is `Docs/privacy-site` in the app repo.
 
 ## Screenshots
@@ -51,18 +51,10 @@ On both home pages (`index.html`, `de/index.html`):
 (`Docs/AppStore/screenshots`, made by `Tools/StoreArt/compose.py`), resized to 480 px wide WebP.
 The link-preview images `assets/img/og-{en,de}.jpg` (1200 × 630) are built from the same screenshots.
 
-## A custom domain later
+## The domain
 
-`throwaplate.com` was unregistered on 2026-10-23. If you buy a domain:
+The site is served at `https://makohippo.com/ThrowAPlate/`: the custom domain `makohippo.com` is set on the root
+repo `MathCatsMathCats.github.io` (DNS at Cloudflare, "DNS only"). Every project site inherits it, and the old
+github.io addresses redirect there. Don't set a custom domain on this repository.
 
-1. Repository **Settings → Pages → Custom domain**: enter it and save.
-2. At the registrar, add A records for `@` to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`,
-   and a CNAME for `www` to `mathcatsmathcats.github.io`.
-3. When the certificate is ready, tick **Enforce HTTPS**.
-4. Replace the site address in the page heads, `sitemap.xml` and `robots.txt` (put your domain in place of `example.com`):
-   ```
-   grep -rl 'https://mathcatsmathcats.github.io/ThrowAPlate/' --include='*.html' --include='*.xml' --include='*.txt' . | xargs perl -pi -e 's#https://mathcatsmathcats\.github\.io/ThrowAPlate/#https://example.com/#g'
-   ```
-5. Add a copy of `app-ads.txt` at the root of the new domain, and update the Support and Marketing URLs in App Store Connect.
-
-`404.html` works on both addresses (it picks its base path from the host name).
+`404.html` has a fixed `<base href="/ThrowAPlate/">`, so its links work at any depth.

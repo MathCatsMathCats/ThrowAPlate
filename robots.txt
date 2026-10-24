@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mathcatsmathcats.github.io/ThrowAPlate/sitemap.xml
+Sitemap: https://makohippo.com/ThrowAPlate/sitemap.xml
