@@ -38,7 +38,7 @@ img { display: block; max-width: 100%; height: auto; }
 .top { position: absolute; inset: 0 0 auto; z-index: 10; }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 76px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 900 19px/1 var(--round); letter-spacing: -.01em; white-space: nowrap; }
-.brand img { width: 40px; height: 40px; border-radius: 10px; box-shadow: 0 3px 0 rgba(0,0,0,.3); }
+.brand img { flex: none; width: 40px; height: 40px; border-radius: 10px; box-shadow: 0 3px 0 rgba(0,0,0,.3); }
 .top nav { display: flex; gap: 2px; }
 .top nav a { text-decoration: none; font: 800 15px/1 var(--round); padding: 11px 12px; border-radius: 12px; white-space: nowrap; }
 .top nav a:hover { background: rgba(255,255,255,.12); }
@@ -252,3 +252,15 @@ img { display: block; max-width: 100%; height: auto; }
 .top nav a.studio:hover { background: #FAF8F3; transform: scale(1.08) rotate(-5deg); }
 .top nav a.studio img { width: 34px; height: 34px; display: block; }
 @media (prefers-reduced-motion: reduce) { .top nav a.studio { transition: none; } .top nav a.studio:hover { transform: none; } }
+
+/* Safari paints the strip behind the clock in the theme colour (--blue, #1E44B8), so the top of the page fades into it */
+.hero::after, .page-hero::after { content: ""; position: absolute; inset: 0 0 auto; height: 110px; pointer-events: none;
+  background: linear-gradient(var(--blue), rgb(30 68 184 / 0)); }
+
+/* Phones: the menu needs room for SF Rounded (wider than the fallback fonts) plus the makohippo badge */
+@media (max-width: 440px) {
+  .top nav a { padding: 10px 6px; font-size: 14px; }
+  .top nav .lang { padding: 8px 8px; }
+  .top nav a.studio { width: 38px; height: 38px; min-height: 38px; margin-left: 4px; }
+  .top nav a.studio img { width: 30px; height: 30px; }
+}
